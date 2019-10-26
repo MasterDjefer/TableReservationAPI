@@ -10,6 +10,9 @@ module.exports = {
     getReservationById(id) {
         return knex("reservations").select().where("id", "=", id);
     },
+    getAllReservations() {
+        return knex.select().from("reservations").leftJoin("table_seats", "table_seats.id", "reservations.table_id");
+    },
     deleteReservationById(id) {
         return knex("reservations").del().where("id", "=", id);
     },

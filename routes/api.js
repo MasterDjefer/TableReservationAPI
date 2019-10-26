@@ -162,6 +162,12 @@ route.put("/reservations/:id", (req, res) => {
     });    
 });
 
+route.get("/reservations", (req, res) => { 
+    queries.getAllReservations()
+    .then((reservations) => {
+        return res.json(reservations);     
+    });
+});
 
 
 module.exports = route;

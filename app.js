@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const knex = require("./db/knexConnection");
 const apiRoutes = require("./routes/api");
 const app = express();
-const PORT = 12345;
+const PORT = 12346;
 
 //create tables and fill table table_seats by default data
 knex.migrate.latest()
