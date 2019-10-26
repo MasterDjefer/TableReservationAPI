@@ -1,0 +1,17 @@
+post => api/reservations
+{
+        "people_count": 4,
+        "start_date": "2019-03-01:10:03",
+        "end_date": "2019-03-01:10:50"
+}
+
+put => api/reservations/1
+{
+        "people_count": 4,
+        "start_date": "2019-03-01:10:03",
+        "end_date": "2019-03-01:10:50"
+}
+
+get => api/reservations/1
+
+delete => api/reservations/1
